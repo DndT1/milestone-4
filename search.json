@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this Site\nThis website is a minimal Quarto website example.\nIt includes:\n\nA homepage\nAn about page\nA shared website configuration\nA custom stylesheet"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Milestone 4 quarto website",
+    "section": "",
+    "text": "This is a Quarto website created for a simple course project.\n\nVisit my local Quarto website\n\n\n\nQuarto lets you combine narrative text, code, and visualizations in a webpage.\n\n\n\nThe example below uses a real public dataset from the Federal Reserve Economic Data (FRED) API for the last five years and visualizes the monthly pattern in the U.S. unemployment rate.\n\nlibrary(ggplot2)\nlibrary(dplyr)\nlibrary(readr)\n\nfred_url &lt;- \"https://fred.stlouisfed.org/graph/fredgraph.csv?id=UNRATE\"\n\nunrate &lt;- readr::read_csv(fred_url, show_col_types = FALSE)\n\ncolnames(unrate) &lt;- c(\"date\", \"unemployment_rate\")\n\nunrate &lt;- unrate |&gt;\n  mutate(date = as.Date(date)) |&gt;\n  filter(date &gt;= as.Date(\"2021-09-01\")) |&gt;\n  arrange(date)\n\nggplot(unrate, aes(x = date, y = unemployment_rate)) +\n  geom_line(color = \"#2c7fb8\", linewidth = 1) +\n  geom_smooth(method = \"loess\", se = FALSE, color = \"#d95f0e\", linetype = \"dashed\") +\n  labs(\n    title = \"U.S. Unemployment Rate, Last Five Years\",\n    subtitle = \"Monthly FRED UNRATE data\",\n    x = \"Month\",\n    y = \"Unemployment rate (%)\",\n    caption = \"Source: Federal Reserve Economic Data (FRED)\"\n  ) +\n  theme_minimal(base_size = 13) +\n  theme(\n    plot.title = element_text(face = \"bold\", size = 16),\n    axis.title = element_text(face = \"bold\"),\n    panel.grid.minor = element_blank()\n  )"
+  },
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "Milestone 4 quarto website",
+    "section": "",
+    "text": "Quarto lets you combine narrative text, code, and visualizations in a webpage."
+  },
+  {
+    "objectID": "index.html#real-world-pattern-u.s.-unemployment-rate",
+    "href": "index.html#real-world-pattern-u.s.-unemployment-rate",
+    "title": "Milestone 4 quarto website",
+    "section": "",
+    "text": "The example below uses a real public dataset from the Federal Reserve Economic Data (FRED) API for the last five years and visualizes the monthly pattern in the U.S. unemployment rate.\n\nlibrary(ggplot2)\nlibrary(dplyr)\nlibrary(readr)\n\nfred_url &lt;- \"https://fred.stlouisfed.org/graph/fredgraph.csv?id=UNRATE\"\n\nunrate &lt;- readr::read_csv(fred_url, show_col_types = FALSE)\n\ncolnames(unrate) &lt;- c(\"date\", \"unemployment_rate\")\n\nunrate &lt;- unrate |&gt;\n  mutate(date = as.Date(date)) |&gt;\n  filter(date &gt;= as.Date(\"2021-09-01\")) |&gt;\n  arrange(date)\n\nggplot(unrate, aes(x = date, y = unemployment_rate)) +\n  geom_line(color = \"#2c7fb8\", linewidth = 1) +\n  geom_smooth(method = \"loess\", se = FALSE, color = \"#d95f0e\", linetype = \"dashed\") +\n  labs(\n    title = \"U.S. Unemployment Rate, Last Five Years\",\n    subtitle = \"Monthly FRED UNRATE data\",\n    x = \"Month\",\n    y = \"Unemployment rate (%)\",\n    caption = \"Source: Federal Reserve Economic Data (FRED)\"\n  ) +\n  theme_minimal(base_size = 13) +\n  theme(\n    plot.title = element_text(face = \"bold\", size = 16),\n    axis.title = element_text(face = \"bold\"),\n    panel.grid.minor = element_blank()\n  )"
+  }
+]

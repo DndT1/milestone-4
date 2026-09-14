@@ -22,13 +22,102 @@ main {
   color: #ffffff;
 }
 
+.social-dashboard {
+  display: grid;
+  grid-template-columns: minmax(190px, 260px) minmax(520px, 1fr);
+  gap: 1rem;
+  align-items: stretch;
+  background: linear-gradient(120deg, #03171c, #010203);
+  border: 1px solid #80d8ff;
+  border-radius: 16px;
+  padding: 1rem;
+  margin: 1rem 0 2rem 0;
+  box-shadow: 0 0 30px rgba(128, 216, 255, 0.12);
+}
+
+.dashboard-sidebar {
+  background: #071016;
+  border: 1px solid #2c8ca0;
+  border-radius: 14px;
+  padding: 1rem;
+  color: #dffbff;
+}
+
+.sidebar-title {
+  color: #80d8ff;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border-bottom: 1px solid #2c8ca0;
+  padding-bottom: 1rem;
+}
+
+.logo-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #8affc1;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  box-shadow: 0 0 8px #8affc1;
+}
+
+.sidebar-meta {
+  margin: 1rem 0;
+}
+
+.meta-label {
+  display: block;
+  color: #a9b7bd;
+  font-size: 0.74rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.meta-value {
+  display: block;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 0.3rem;
+}
+
+.risk-value {
+  color: #ffb27a;
+}
+
+.sidebar-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  border-top: 1px solid #2c8ca0;
+  padding-top: 1rem;
+}
+
+.sidebar-legend span {
+  color: #b1e9f7;
+  font-size: 0.82rem;
+}
+
+.legend-swatch {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.legend-swatch.blue { background: #80d8ff; }
+.legend-swatch.green { background: #8affc1; }
+.legend-swatch.orange { background: #ffb27a; }
+
 .dashboard-graphic {
   background: radial-gradient(circle at top left, #142b34, #050505 90%);
   border: 1px solid #80d8ff;
   border-radius: 16px;
   padding: 1.5rem;
-  margin: 1rem 0 2rem 0;
-  box-shadow: 0 0 30px rgba(128, 216, 255, 0.12);
+  margin: 0;
 }
 
 .dashboard-head {
@@ -62,7 +151,7 @@ main {
 
 .dashboard-summary {
   display: grid;
-  grid-template-columns: repeat(4, minmax(150px, 1fr));
+  grid-template-columns: repeat(4, minmax(130px, 1fr));
   gap: 1rem;
   margin-top: 1rem;
 }
@@ -186,6 +275,19 @@ main {
   color: #b1e9f7;
   font-size: 0.8rem;
   margin-top: 0.8rem;
+}
+
+@media (max-width: 1000px) {
+  .social-dashboard,
+  .dashboard-summary,
+  .chart-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
 
 .dashboard-card {

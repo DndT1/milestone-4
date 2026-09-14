@@ -143,169 +143,246 @@ ul.task-list li input[type="checkbox"] {
 <p>
 <a href="http://127.0.0.1:8000/index.html" target="_blank">Visit my local Quarto website</a>
 </p>
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>This page uses real public FRED data from the last five years and builds an interactive view of how AI, robotics, and automation pressure may relate to unemployment and labor-market displacement. The chart expands the monthly payroll and unemployment records into thousands of observation rows across sector and occupation risk groups.</p>
+<main class="site-content">
+<section id="overview" class="overview">
+<h2 class="anchored" data-anchor-id="welcome-to-the-milestone-4-quarto-website">
+Overview
+</h2>
+<p>
+This page uses real public FRED data from the last five years and builds an interactive view of how AI, robotics, and automation pressure may relate to unemployment and labor-market displacement. The chart expands the monthly payroll and unemployment records into thousands of observation rows across sector and occupation risk groups.
+</p>
 </section>
-<section id="social-media-productivity-data" class="level2">
-<h2 class="anchored" data-anchor-id="social-media-productivity-data">Social media productivity data</h2>
-<p>Social media can serve both as a communication channel and a distraction. A simple productivity view reports the following sample indicators:</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 30%">
-<col style="width: 40%">
-<col style="width: 30%">
-</colgroup>
+<section id="social-media-productivity-data" class="productivity">
+<h2 class="anchored">
+Social media productivity data
+</h2>
+<p>
+Social media can serve both as a communication channel and a distraction. A simple productivity view reports the following sample indicators:
+</p>
+<table>
 <thead>
-<tr class="header">
-<th>Metric</th>
-<th style="text-align: right;">Value</th>
-<th>Interpretation</th>
+<tr>
+<th>
+Metric
+</th>
+<th>
+Value
+</th>
+<th>
+Interpretation
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td>Daily social media use</td>
-<td style="text-align: right;">42 min</td>
-<td>Moderate use may support learning and community, but time intensity matters.</td>
+<tr>
+<td>
+Daily social media use
+</td>
+<td>
+42 min
+</td>
+<td>
+Moderate use may support learning and community, but time intensity matters.
+</td>
 </tr>
-<tr class="even">
-<td>Group attention loss</td>
-<td style="text-align: right;">15%</td>
-<td>Users often lose focus after a short scroll session.</td>
+<tr>
+<td>
+Group attention loss
+</td>
+<td>
+15%
+</td>
+<td>
+Users often lose focus after a short scroll session.
+</td>
 </tr>
-<tr class="odd">
-<td>Task completion impact</td>
-<td style="text-align: right;">18%</td>
-<td>Work sessions with frequent social-media check-ins may finish more slowly.</td>
+<tr>
+<td>
+Task completion impact
+</td>
+<td>
+18%
+</td>
+<td>
+Work sessions with frequent social-media check-ins may finish more slowly.
+</td>
 </tr>
-<tr class="even">
-<td>Productive platform use</td>
-<td style="text-align: right;">67%</td>
-<td>When used for audience research, learning, and professional networking, social media can support job productivity.</td>
+<tr>
+<td>
+Productive platform use
+</td>
+<td>
+67%
+</td>
+<td>
+When used for audience research, learning, and professional networking, social media can support job productivity.
+</td>
 </tr>
 </tbody>
 </table>
-<p>Productivity improves when social-media use is planned, limited, and tied to a clear work goal rather than treated as a constant background channel.</p>
+<p>
+Productivity improves when social-media use is planned, limited, and tied to a clear work goal rather than treated as a constant background channel.
+</p>
 </section>
-<section id="social-media-dashboard-graphic" class="level2">
-<h2 class="anchored" data-anchor-id="social-media-dashboard-graphic">Social media dashboard graphic</h2>
+<section id="social-media-dashboard-graphic" class="dashboard-card-section">
+<h2 class="anchored">
+Social media dashboard graphic
+</h2>
 <div class="social-dashboard">
 <div class="dashboard-sidebar">
-<div class="sidebar-title">
-<span class="logo-dot"></span>Social Signal Monitor
-</div>
-<div class="sidebar-meta">
-<span class="meta-label">Topic</span><span class="meta-value">#AI / Productivity</span>
-</div>
-<div class="sidebar-meta">
-<span class="meta-label">Mentions</span><span class="meta-value">2,400</span>
-</div>
-<div class="sidebar-meta">
-<span class="meta-label">Detected Risk</span><span class="meta-value risk-value">31 Notes</span>
-</div>
-<div class="sidebar-legend">
-<span><i class="legend-swatch blue"></i>Productive</span><span><i class="legend-swatch green"></i>Reach</span><span><i class="legend-swatch orange"></i>Risk</span>
-</div>
+<pre><code>&lt;div class="sidebar-title"&gt;&lt;span class="logo-dot"&gt;&lt;/span&gt;Social Signal Monitor&lt;/div&gt;
+&lt;div class="sidebar-meta"&gt;&lt;span class="meta-label"&gt;Topic&lt;/span&gt;&lt;span class="meta-value"&gt;#AI / Productivity&lt;/span&gt;&lt;/div&gt;
+&lt;div class="sidebar-meta"&gt;&lt;span class="meta-label"&gt;Mentions&lt;/span&gt;&lt;span class="meta-value"&gt;2,400&lt;/span&gt;&lt;/div&gt;
+&lt;div class="sidebar-meta"&gt;&lt;span class="meta-label"&gt;Detected Risk&lt;/span&gt;&lt;span class="meta-value risk-value"&gt;31 Notes&lt;/span&gt;&lt;/div&gt;
+&lt;div class="sidebar-legend"&gt;&lt;span&gt;&lt;i class="legend-swatch blue"&gt;&lt;/i&gt;Productive&lt;/span&gt;&lt;span&gt;&lt;i class="legend-swatch green"&gt;&lt;/i&gt;Reach&lt;/span&gt;&lt;span&gt;&lt;i class="legend-swatch orange"&gt;&lt;/i&gt;Risk&lt;/span&gt;&lt;/div&gt;</code></pre>
 </div>
 <div class="dashboard-graphic">
-<div class="dashboard-head">
-<div>
-<pre><code>&lt;div class="kicker"&gt;SOCIAL SIGNALS&lt;/div&gt;
-&lt;h2&gt;Productivity &amp;amp; Risk Monitor&lt;/h2&gt;</code></pre>
-</div>
-<div class="dashboard-date">
-Q3 2026
-</div>
-</div>
-<div class="dashboard-summary">
-<div class="summary-card">
-<pre><code>&lt;span class="summary-label"&gt;Daily social use&lt;/span&gt;
-&lt;span class="summary-value"&gt;42 min&lt;/span&gt;
-&lt;span class="summary-detail"&gt;moderate&lt;/span&gt;</code></pre>
-</div>
-<div class="summary-card">
-<pre><code>&lt;span class="summary-label"&gt;Attention loss&lt;/span&gt;
-&lt;span class="summary-value"&gt;15%&lt;/span&gt;
-&lt;span class="summary-detail"&gt;focus drag&lt;/span&gt;</code></pre>
-</div>
-<div class="summary-card">
-<pre><code>&lt;span class="summary-label"&gt;Task impact&lt;/span&gt;
-&lt;span class="summary-value"&gt;18%&lt;/span&gt;
-&lt;span class="summary-detail"&gt;slower flow&lt;/span&gt;</code></pre>
-</div>
-<div class="summary-card">
-<pre><code>&lt;span class="summary-label"&gt;Productive use&lt;/span&gt;
-&lt;span class="summary-value"&gt;67%&lt;/span&gt;
-&lt;span class="summary-detail"&gt;networking&lt;/span&gt;</code></pre>
-</div>
-</div>
-<div class="chart-grid">
-<div class="chart-panel">
-<pre><code>&lt;div class="chart-title"&gt;Engagement signal strength&lt;/div&gt;
-&lt;div class="bar-chart"&gt;
-  &lt;div class="bar-row"&gt;&lt;span class="bar-label"&gt;Tweets&lt;/span&gt;&lt;span class="bar-track"&gt;&lt;span class="bar-fill" style="width: 84%;"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="bar-value"&gt;2400&lt;/span&gt;&lt;/div&gt;
-  &lt;div class="bar-row"&gt;&lt;span class="bar-label"&gt;Hashtag&lt;/span&gt;&lt;span class="bar-track"&gt;&lt;span class="bar-fill hashtag" style="width: 90%;"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="bar-value"&gt;#AI&lt;/span&gt;&lt;/div&gt;
-  &lt;div class="bar-row"&gt;&lt;span class="bar-label"&gt;Engagement&lt;/span&gt;&lt;span class="bar-track"&gt;&lt;span class="bar-fill engage" style="width: 53%;"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="bar-value"&gt;18.6%&lt;/span&gt;&lt;/div&gt;
-  &lt;div class="bar-row"&gt;&lt;span class="bar-label"&gt;Risk notes&lt;/span&gt;&lt;span class="bar-track"&gt;&lt;span class="bar-fill risk" style="width: 34%;"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="bar-value"&gt;31&lt;/span&gt;&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-</div>
-<div class="chart-panel">
-<pre><code>&lt;div class="chart-title"&gt;Focus health&lt;/div&gt;
-&lt;div class="radial-wrap"&gt;
-  &lt;div class="radial-chart"&gt;
-    &lt;span class="radial-label"&gt;67%&lt;/span&gt;
+<pre><code>&lt;div class="dashboard-head"&gt;
+  &lt;div&gt;
+    &lt;div class="kicker"&gt;SOCIAL SIGNALS&lt;/div&gt;
+    &lt;h2&gt;Productivity &amp;amp; Risk Monitor&lt;/h2&gt;
+  &lt;/div&gt;
+  &lt;div class="dashboard-date"&gt;Q3 2026&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="dashboard-summary"&gt;
+  &lt;div class="summary-card"&gt;
+    &lt;span class="summary-label"&gt;Daily social use&lt;/span&gt;
+    &lt;span class="summary-value"&gt;42 min&lt;/span&gt;
+    &lt;span class="summary-detail"&gt;moderate&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class="summary-card"&gt;
+    &lt;span class="summary-label"&gt;Attention loss&lt;/span&gt;
+    &lt;span class="summary-value"&gt;15%&lt;/span&gt;
+    &lt;span class="summary-detail"&gt;focus drag&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class="summary-card"&gt;
+    &lt;span class="summary-label"&gt;Task impact&lt;/span&gt;
+    &lt;span class="summary-value"&gt;18%&lt;/span&gt;
+    &lt;span class="summary-detail"&gt;slower flow&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class="summary-card"&gt;
+    &lt;span class="summary-label"&gt;Productive use&lt;/span&gt;
+    &lt;span class="summary-value"&gt;67%&lt;/span&gt;
+    &lt;span class="summary-detail"&gt;networking&lt;/span&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="chart-note"&gt;productive platform use&lt;/div&gt;</code></pre>
-</div>
-</div>
+
+&lt;div class="chart-grid"&gt;
+  &lt;div class="chart-panel"&gt;
+    &lt;div class="chart-title"&gt;Engagement signal strength&lt;/div&gt;
+    &lt;div class="bar-chart"&gt;
+      &lt;div class="bar-row"&gt;&lt;span class="bar-label"&gt;Tweets&lt;/span&gt;&lt;span class="bar-track"&gt;&lt;span class="bar-fill" style="width: 84%;"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="bar-value"&gt;2400&lt;/span&gt;&lt;/div&gt;
+      &lt;div class="bar-row"&gt;&lt;span class="bar-label"&gt;Hashtag&lt;/span&gt;&lt;span class="bar-track"&gt;&lt;span class="bar-fill hashtag" style="width: 90%;"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="bar-value"&gt;#AI&lt;/span&gt;&lt;/div&gt;
+      &lt;div class="bar-row"&gt;&lt;span class="bar-label"&gt;Engagement&lt;/span&gt;&lt;span class="bar-track"&gt;&lt;span class="bar-fill engage" style="width: 53%;"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="bar-value"&gt;18.6%&lt;/span&gt;&lt;/div&gt;
+      &lt;div class="bar-row"&gt;&lt;span class="bar-label"&gt;Risk notes&lt;/span&gt;&lt;span class="bar-track"&gt;&lt;span class="bar-fill risk" style="width: 34%;"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="bar-value"&gt;31&lt;/span&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="chart-panel"&gt;
+    &lt;div class="chart-title"&gt;Focus health&lt;/div&gt;
+    &lt;div class="radial-wrap"&gt;
+      &lt;div class="radial-chart"&gt;
+        &lt;span class="radial-label"&gt;67%&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="chart-note"&gt;productive platform use&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 </div>
 </div>
 </section>
-<section id="first-data-table" class="level2">
-<h2 class="anchored" data-anchor-id="first-data-table">First data table</h2>
-<p>Here is a simple sample table showing how social-media use and task focus can be organized.</p>
-<table class="caption-top table">
+<section id="first-data-table" class="data-table">
+<h2 class="anchored">
+First data table
+</h2>
+<p>
+Here is a simple sample table showing how social-media use and task focus can be organized.
+</p>
+<table>
 <thead>
-<tr class="header">
-<th>Day</th>
-<th style="text-align: right;">Social minutes</th>
-<th style="text-align: right;">Focus score</th>
-<th style="text-align: right;">Productive tasks</th>
+<tr>
+<th>
+Day
+</th>
+<th>
+Social minutes
+</th>
+<th>
+Focus score
+</th>
+<th>
+Productive tasks
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td>Monday</td>
-<td style="text-align: right;">30</td>
-<td style="text-align: right;">82</td>
-<td style="text-align: right;">5</td>
+<tr>
+<td>
+Monday
+</td>
+<td>
+30
+</td>
+<td>
+82
+</td>
+<td>
+5
+</td>
 </tr>
-<tr class="even">
-<td>Tuesday</td>
-<td style="text-align: right;">45</td>
-<td style="text-align: right;">78</td>
-<td style="text-align: right;">4</td>
+<tr>
+<td>
+Tuesday
+</td>
+<td>
+45
+</td>
+<td>
+78
+</td>
+<td>
+4
+</td>
 </tr>
-<tr class="odd">
-<td>Wednesday</td>
-<td style="text-align: right;">20</td>
-<td style="text-align: right;">88</td>
-<td style="text-align: right;">6</td>
+<tr>
+<td>
+Wednesday
+</td>
+<td>
+20
+</td>
+<td>
+88
+</td>
+<td>
+6
+</td>
 </tr>
-<tr class="even">
-<td>Thursday</td>
-<td style="text-align: right;">50</td>
-<td style="text-align: right;">74</td>
-<td style="text-align: right;">3</td>
+<tr>
+<td>
+Thursday
+</td>
+<td>
+50
+</td>
+<td>
+74
+</td>
+<td>
+3
+</td>
 </tr>
 </tbody>
 </table>
-<p><a href="https://www.fred.stlouisfed.org/">Source: FRED data</a></p>
+<p>
+<a href="https://www.fred.stlouisfed.org/">Source: FRED data</a>
+</p>
 </section>
-<section id="interactive-data-explorer" class="level2">
-<h2 class="anchored" data-anchor-id="interactive-data-explorer">Interactive data explorer</h2>
+<section id="interactive-data-explorer" class="data-explorer">
+<h2 class="anchored">
+Interactive data explorer
+</h2>
 <div class="dashboard-card">
 <h2 class="anchored">
 Data Explorer
@@ -382,43 +459,78 @@ Flagged posts require review
 </div>
 <script src="script.js"></script>
 </section>
-<section id="online-tweet-data" class="level2">
-<h2 class="anchored" data-anchor-id="online-tweet-data">Online tweet data</h2>
-<p>Social media posts include hashtags, messages, replies, and engagement signals. A simple online-data sample can compare content reach and misinformation notes.</p>
-<table class="caption-top table">
+<section id="online-tweet-data" class="online-data">
+<h2 class="anchored">
+Online tweet data
+</h2>
+<p>
+Social media posts include hashtags, messages, replies, and engagement signals. A simple online-data sample can compare content reach and misinformation notes.
+</p>
+<table>
 <thead>
-<tr class="header">
-<th>Metric</th>
-<th style="text-align: right;">Value</th>
-<th>Signal</th>
+<tr>
+<th>
+Metric
+</th>
+<th>
+Value
+</th>
+<th>
+Signal
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td>Tweet volume</td>
-<td style="text-align: right;">2400</td>
-<td>High post activity across the sample window</td>
+<tr>
+<td>
+Tweet volume
+</td>
+<td>
+2400
+</td>
+<td>
+High post activity across the sample window
+</td>
 </tr>
-<tr class="even">
-<td>Top hashtag</td>
-<td style="text-align: right;">#AI</td>
-<td>Strong topic concentration</td>
+<tr>
+<td>
+Top hashtag
+</td>
+<td>
+#AI
+</td>
+<td>
+Strong topic concentration
+</td>
 </tr>
-<tr class="odd">
-<td>Average engagement</td>
-<td style="text-align: right;">18.6%</td>
-<td>Moderate interaction rate</td>
+<tr>
+<td>
+Average engagement
+</td>
+<td>
+18.6%
+</td>
+<td>
+Moderate interaction rate
+</td>
 </tr>
-<tr class="even">
-<td>Misinformation spread notes</td>
-<td style="text-align: right;">31</td>
-<td>Flagged posts require review</td>
+<tr>
+<td>
+Misinformation spread notes
+</td>
+<td>
+31
+</td>
+<td>
+Flagged posts require review
+</td>
 </tr>
 </tbody>
 </table>
-
-
 </section>
+</main>
+
+
 </section>
 
 </main> <!-- /main -->

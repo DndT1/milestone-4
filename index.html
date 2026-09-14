@@ -75,6 +75,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -187,6 +188,61 @@ ul.task-list li input[type="checkbox"] {
 </table>
 <p>Productivity improves when social-media use is planned, limited, and tied to a clear work goal rather than treated as a constant background channel.</p>
 </section>
+<section id="social-media-dashboard-graphic" class="level2">
+<h2 class="anchored" data-anchor-id="social-media-dashboard-graphic">Social media dashboard graphic</h2>
+<div class="dashboard-graphic">
+<div class="dashboard-head">
+<pre><code>&lt;div&gt;
+  &lt;div class="kicker"&gt;SOCIAL SIGNALS&lt;/div&gt;
+  &lt;h2&gt;Productivity &amp;amp; Risk Monitor&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div class="dashboard-date"&gt;Q3 2026&lt;/div&gt;</code></pre>
+</div>
+<div class="dashboard-summary">
+<pre><code>&lt;div class="summary-card"&gt;
+  &lt;span class="summary-label"&gt;Daily social use&lt;/span&gt;
+  &lt;span class="summary-value"&gt;42 min&lt;/span&gt;
+  &lt;span class="summary-detail"&gt;moderate&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="summary-card"&gt;
+  &lt;span class="summary-label"&gt;Attention loss&lt;/span&gt;
+  &lt;span class="summary-value"&gt;15%&lt;/span&gt;
+  &lt;span class="summary-detail"&gt;focus drag&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="summary-card"&gt;
+  &lt;span class="summary-label"&gt;Task impact&lt;/span&gt;
+  &lt;span class="summary-value"&gt;18%&lt;/span&gt;
+  &lt;span class="summary-detail"&gt;slower flow&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="summary-card"&gt;
+  &lt;span class="summary-label"&gt;Productive use&lt;/span&gt;
+  &lt;span class="summary-value"&gt;67%&lt;/span&gt;
+  &lt;span class="summary-detail"&gt;networking&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+</div>
+<div class="chart-grid">
+<pre><code>&lt;div class="chart-panel"&gt;
+  &lt;div class="chart-title"&gt;Engagement signal strength&lt;/div&gt;
+  &lt;div class="bar-chart"&gt;
+    &lt;div class="bar-row"&gt;&lt;span class="bar-label"&gt;Tweets&lt;/span&gt;&lt;span class="bar-track"&gt;&lt;span class="bar-fill" style="width: 84%;"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="bar-value"&gt;2400&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="bar-row"&gt;&lt;span class="bar-label"&gt;Hashtag&lt;/span&gt;&lt;span class="bar-track"&gt;&lt;span class="bar-fill hashtag" style="width: 90%;"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="bar-value"&gt;#AI&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="bar-row"&gt;&lt;span class="bar-label"&gt;Engagement&lt;/span&gt;&lt;span class="bar-track"&gt;&lt;span class="bar-fill engage" style="width: 53%;"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="bar-value"&gt;18.6%&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="bar-row"&gt;&lt;span class="bar-label"&gt;Risk notes&lt;/span&gt;&lt;span class="bar-track"&gt;&lt;span class="bar-fill risk" style="width: 34%;"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="bar-value"&gt;31&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="chart-panel"&gt;
+  &lt;div class="chart-title"&gt;Focus health&lt;/div&gt;
+  &lt;div class="radial-wrap"&gt;
+    &lt;div class="radial-chart"&gt;
+      &lt;span class="radial-label"&gt;67%&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="chart-note"&gt;productive platform use&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</div>
+</section>
 <section id="first-data-table" class="level2">
 <h2 class="anchored" data-anchor-id="first-data-table">First data table</h2>
 <p>Here is a simple sample table showing how social-media use and task focus can be organized.</p>
@@ -227,6 +283,84 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 <p><a href="https://www.fred.stlouisfed.org/">Source: FRED data</a></p>
+</section>
+<section id="interactive-data-explorer" class="level2">
+<h2 class="anchored" data-anchor-id="interactive-data-explorer">Interactive data explorer</h2>
+<div class="dashboard-card">
+<h2 class="anchored">
+Data Explorer
+</h2>
+<div class="table-controls">
+<pre><code>&lt;input id="metricSearch" type="search" placeholder="Search metrics or signals" /&gt;
+&lt;select id="metricSort"&gt;
+  &lt;option value="metric"&gt;Sort by metric&lt;/option&gt;
+  &lt;option value="value"&gt;Sort by value&lt;/option&gt;
+&lt;/select&gt;
+&lt;button id="refreshData" type="button"&gt;Refresh&lt;/button&gt;</code></pre>
+</div>
+<table class="metrics-table" id="metricTable">
+<thead>
+<tr>
+<th>
+Metric
+</th>
+<th>
+Value
+</th>
+<th>
+Signal
+</th>
+</tr>
+</thead>
+<tbody id="metricRows">
+<tr>
+<td>
+Tweet volume
+</td>
+<td>
+2400
+</td>
+<td>
+High post activity across the sample window
+</td>
+</tr>
+<tr>
+<td>
+Top hashtag
+</td>
+<td>
+#AI
+</td>
+<td>
+Strong topic concentration
+</td>
+</tr>
+<tr>
+<td>
+Average engagement
+</td>
+<td>
+18.6%
+</td>
+<td>
+Moderate interaction rate
+</td>
+</tr>
+<tr>
+<td>
+Misinformation spread notes
+</td>
+<td>
+31
+</td>
+<td>
+Flagged posts require review
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<script src="script.js"></script>
 </section>
 <section id="online-tweet-data" class="level2">
 <h2 class="anchored" data-anchor-id="online-tweet-data">Online tweet data</h2>

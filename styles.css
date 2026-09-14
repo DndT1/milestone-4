@@ -1,0 +1,248 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background: #000000;
+  color: #ffffff;
+}
+
+.navbar {
+  background-color: #111111;
+}
+
+h1, h2 {
+  color: #ffffff;
+}
+
+a {
+  color: #80d8ff;
+}
+
+main {
+  background: #000000;
+  color: #ffffff;
+}
+
+.dashboard-graphic {
+  background: radial-gradient(circle at top left, #142b34, #050505 90%);
+  border: 1px solid #80d8ff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin: 1rem 0 2rem 0;
+  box-shadow: 0 0 30px rgba(128, 216, 255, 0.12);
+}
+
+.dashboard-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid #2c8ca0;
+  padding-bottom: 1rem;
+}
+
+.kicker {
+  color: #80d8ff;
+  font-size: 0.74rem;
+  letter-spacing: 0.2em;
+}
+
+.dashboard-head h2 {
+  margin: 0.2rem 0 0 0;
+  color: #ffffff;
+}
+
+.dashboard-date {
+  background: #0c1b1f;
+  border: 1px solid #80d8ff;
+  color: #80d8ff;
+  padding: 0.45rem 0.8rem;
+  border-radius: 30px;
+  font-size: 0.85rem;
+}
+
+.dashboard-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.summary-card {
+  background: #071116;
+  border: 1px solid #244a54;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.summary-label {
+  display: block;
+  color: #b1e9f7;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.summary-value {
+  display: block;
+  color: #dffbff;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0.4rem 0;
+}
+
+.summary-detail {
+  display: block;
+  color: #a9b7bd;
+  font-size: 0.78rem;
+}
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.chart-panel {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #244a54;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.chart-title {
+  color: #80d8ff;
+  font-size: 0.84rem;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+}
+
+.bar-chart {
+  margin-top: 1rem;
+}
+
+.bar-row {
+  display: grid;
+  grid-template-columns: 90px 1fr 70px;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.9rem;
+}
+
+.bar-label {
+  color: #dffbff;
+  font-size: 0.82rem;
+}
+
+.bar-track {
+  display: block;
+  height: 8px;
+  background: #1b242a;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  display: block;
+  height: 8px;
+  background: #80d8ff;
+  border-radius: 50px;
+}
+
+.bar-fill.hashtag { background: #8affc1; }
+.bar-fill.engage { background: #d6a7ff; }
+.bar-fill.risk { background: #ffb27a; }
+
+.bar-value {
+  color: #ffffff;
+  font-size: 0.8rem;
+}
+
+.radial-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.radial-chart {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 8px solid #80d8ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle, #000 50%, transparent 52%);
+}
+
+.radial-label {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.chart-note {
+  text-align: center;
+  color: #b1e9f7;
+  font-size: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+.dashboard-card {
+  background: #111111;
+  border: 1px solid #2b2b2b;
+  border-radius: 12px;
+  padding: 1.2rem;
+  margin: 1rem 0;
+  box-shadow: 0 0 20px rgba(128, 216, 255, 0.08);
+}
+
+.dashboard-card h2 {
+  color: #80d8ff;
+}
+
+.table-controls {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.table-controls input,
+.table-controls select,
+.table-controls button {
+  background: #000000;
+  color: #ffffff;
+  border: 1px solid #80d8ff;
+  border-radius: 8px;
+  padding: 0.45rem 0.8rem;
+}
+
+.table-controls button {
+  cursor: pointer;
+}
+
+.metrics-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.metrics-table th,
+.metrics-table td {
+  border-bottom: 1px solid #333333;
+  padding: 0.65rem 0.75rem;
+  text-align: left;
+}
+
+.metrics-table th {
+  color: #80d8ff;
+}
+
+.metrics-table tbody tr:hover {
+  background: #1b1b1b;
+}
+
+#metricRows tr.hidden {
+  display: none;
+}
